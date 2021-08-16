@@ -1,0 +1,25 @@
+definitions:
+  router.ResponsePing:
+    properties:
+      message:
+        example: pong
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: return pong
+      operationId: ping-pong
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/router.ResponsePing'
+      summary: ping pong
+swagger: "2.0"

@@ -1,0 +1,7 @@
+version: '3'
+services:
+  codeql-ct:
+    restart: always
+    environment:
+      SWAGGER_HOST:
+      LOCAL_LISTEN_PORT: 80
